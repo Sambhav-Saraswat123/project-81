@@ -1,0 +1,25 @@
+#canvas1{
+    /* border: 1px solid #000000; */
+    width: 700pt;
+    background: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px 0px rgb(184, 184, 184);
+}
+body{
+    background: linear-gradient(to right, #F5f500, #ffd000);
+}
+#canvas1 {  
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+  
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 110px); }
+    100%   { transform: translate(0, -0px); }    
+}
